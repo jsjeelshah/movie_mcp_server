@@ -1,7 +1,7 @@
 
 #  Movie Rating MCP Server
 
-This project implements a **Model Context Protocol (MCP)**-style microservice that uses a Large Language Model (LLM) and [The Movie Database (TMDb)](https://www.themoviedb.org/) API to return the **star rating**, **overview**, and **metadata** for a given movie — even when the movie name is mentioned *indirectly* in natural language queries.
+This project implements a MCP-style microservice that uses a Large Language Model (LLM) and [The Movie Database (TMDb)](https://www.themoviedb.org/) API to return the star rating, overview, and metadata for a given movie.
 
 Example prompts:
 
@@ -13,11 +13,11 @@ Example prompts:
 
 ##  Features
 
-- Uses **FastAPI** to expose an MCP-style HTTP endpoint
-- Integrates **LLM reasoning** (via `g4f`) to interpret movie names from natural language
-- Fetches real-time movie details from **TMDb API**
+- Uses FastAPI to expose an MCP-style HTTP endpoint
+- Integrates LLM (via `g4f`) to interpret movie names from natural language
+- Fetches real-time movie details from TMDb API
 - Returns clean, structured JSON responses
-- Can be tested directly from a **Jupyter Notebook** or **local browser**
+- Can be tested directly from a Jupyter Notebook or local browser
 
 ---
 
@@ -43,7 +43,7 @@ Example prompts:
 ##  Project Structure
 
 ```
-movie_mcp_server.ipynb    # Jupyter notebook running FastAPI locally
+movie_mcp.ipynb    # Jupyter notebook running FastAPI locally
 ```
 
 ---
@@ -53,7 +53,7 @@ movie_mcp_server.ipynb    # Jupyter notebook running FastAPI locally
 ###  Clone the Repository
 
 ```bash
-git clone <your_repo_url>
+git clone https://github.com/jsjeelshah/movie_mcp_server.git
 cd movie_mcp_server
 ```
 
