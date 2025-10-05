@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+nest_asyncio
+httpx
+pydantic
+g4f
